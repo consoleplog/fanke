@@ -2,11 +2,305 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="js/fontsize.js"></script>
+	<style>
+
+	body,ul,li{margin:0;padding: 0;}
+	li{list-style: none;}
+	a{text-decoration: none;}
+
+	html{font-size: 50px;}
+	html,body{position: relative;width: 100%;height: 100%;overflow: hidden;}
+
+	
+		
+	.swiper-container{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;}
+	.page1{
+		background-color: #0d2b4c;
+		position: relative;}
+	.page1 .pm1{
+		position: absolute;
+		width: 6.4rem;
+		height: 1.62rem;
+		background: url(images/page-1.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 1.14rem;
+	}
+	.page1 .pm2{
+		position: absolute;
+		width: 6.4rem;
+		height: 1.57rem;
+		background: url(images/page1-m2.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 5rem;
+	}
+	.page2{position: relative;}
+	.page2 .pm3{
+		position: absolute;
+		width: 6.4rem;
+		height: 2.17rem;
+		background: url(images/page2.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 0;}
+
+	.page2 .pm4{
+		position: absolute;
+		width: 6.4rem;
+		height: 3.4rem;
+		background: url(images/pag5_03.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 2.17rem;}
+	.page2 .pm5{
+		position: absolute;
+		width: 6.4rem;
+		height: 1.27rem;
+		background: url(images/page6.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 5.87rem;}
+	.page3{
+		
+		position: relative;
+		background-color: #0d2b4c;
+	}
+	.page3 .pm6{
+		position: absolute;
+		width: 6.4rem;
+		height: 6.87rem;
+		background: url(images/page7_01.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 0;}
+
+
+	.page3 .pm7{
+		position: absolute;
+		width: 6.4rem;
+		height: 1.22rem;
+		background: url(images/page8_03.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 6.87rem;}
+
+	.page3 .pm7{
+		position: absolute;
+		width: 6.4rem;
+		height: 1.22rem;
+		background: url(images/page8_03.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 6.87rem;}
+	.page4{position: relative;}
+
+	.page4 .pm8{
+			position: absolute;
+			width: 1.99rem;
+			height: 4.66rem;
+			background: url(images/page4-m1_03.png) no-repeat;
+			background-size: 100% 100%;
+			left:0.16rem;
+			top: 0.15rem;
+		}
+
+	.page4 .pm9{
+			position: absolute;
+			width: 1.99rem;
+			height: 4.66rem;
+			background: url(images/page4_05.png) no-repeat;
+			background-size: 100% 100%;
+			left:2.21rem;
+			top: 0.15rem;}
+
+	.page4 .pm10{
+		position: absolute;
+		width: 1.99rem;
+		height: 4.66rem;
+		background: url(images/page4_07.png) no-repeat;
+		background-size: 100% 100%;
+		left:4.26rem;
+		top: 0.15rem;}
+
+	.page4 .pm11{
+		position: absolute;
+		width: 6.4rem;
+		height: 0.95rem;
+		background: url(images/page4_26.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 5.3rem;}
+
+	.page4 .pm12{
+		position: absolute;
+		width: 6.4rem;
+		height: 0.62rem;
+		background: url(images/page4_27.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 6.35rem;}
+
+	.page5 .pm13{
+		position: absolute;
+		width: 6.4rem;
+		height: 4.74rem;
+		background: url(images/page5_01.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 0rem;}
+
+
+	.page5 .pm14{
+		position: absolute;
+		width: 6.4rem;
+		height: 2.43rem;
+		background: url(images/page5_02.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 4.74rem;}
+
+	.page6 .pm15{
+		position: absolute;
+		width: 3.13rem;
+		height: 4.81rem;
+		background: url(images/page6_01.png) no-repeat;
+		background-size: 100% 100%;
+		left:0;
+		top: 0;}
+
+	.page6 .pm16{
+		position: absolute;
+		width: 6.4rem;
+		height: 3.55rem;
+		background: url(images/page6_02_01.png) no-repeat;
+		background-size: 100% 100%;
+		left:0rem;
+		top: 0rem;}
+
+	.page6 .pm17{
+		position: absolute;
+		width: 4.88rem;
+		height: 3.02rem;
+		background: url(images/page6_03.png) no-repeat;
+		background-size: 100% 100%;
+		right:0rem;
+		top: 1.69rem;}
+
+	.page6 .pm18{
+		position: absolute;
+		width: 6.4rem;
+		height: 2.36rem;
+		background: url(images/page6_05.png) no-repeat;
+		background-size: 100% 100%;
+		left:0rem;
+		top: 4.71rem;}
+
+
+
+
+
+
+	
+
+
+
+
+	</style>
+
 </head>
 <body>
-	<h1>Hello world</h1>
-	<a href="http://www.baidu.com">click</a>
-	<p>你输入的有毛病，赶紧的瞅瞅有问题没，然后再来试试</p>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+        <div class="swiper-slide page1">
+
+	        <div class="pm1"></div>
+	        <div class="pm2"></div>
+	       
+
+    	</div>
+        <div class="swiper-slide page2">
+        	<div class="pm3"></div>
+        	<div class="pm4"></div>
+        	<div class="pm5"></div>
+
+        </div>
+        <div class="swiper-slide page3">
+        	<div class="pm6 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"></div>
+        	<div class="pm7"></div>
+
+        </div>
+         <div class="swiper-slide page4">
+        	<div class="pm8"></div>
+        	<div class="pm9"></div>
+        	<div class="pm10"></div>
+        	<div class="pm11"></div>
+        	<div class="pm12"></div>
+
+        </div>
+         <div class="swiper-slide page5">
+        	<div class="pm13"></div>
+        	<div class="pm14"></div>
+
+        </div>
+         <div class="swiper-slide page6">
+        	<div class="pm15"></div>
+        	<div class="pm16"></div>
+        	<div class="pm17"></div>
+        	<div class="pm18"></div>
+
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+
+</div>
+
+
+
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/touch-0.2.14.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+		var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'vertical',
+		    initialSlide :5,
+		   
+		    
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+
+		    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素 
+			    swiperAnimate(swiper); //初始化完成开始动画
+			  }, 
+		  onSlideChangeEnd: function(swiper){ 
+			    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			  } 
+				    
+
+	  })  
+
+	});        
+  </script>
+
+
+
+
+</script>
 </body>
 </html>
